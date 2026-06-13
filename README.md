@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HRMS (Human Resource Management System)
 
 ##  Mevcut Diller / Available Languages
@@ -174,3 +175,7 @@ It follows the REST API architecture and implements **DTO**, **Request-Response 
 }
 
 ```
+=======
+# HMRS-App
+Java Human Resource Management System
+>>>>>>> 9a26837defc113a1fedb8cb66164e1640ffc33b7
