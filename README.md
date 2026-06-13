@@ -4,8 +4,6 @@
 [🇹🇷 Türkçe](#türkçe) | [🇬🇧 English](#english)
 
 ---
-## Demo Video
-
 ## Türkçe 
 
 ### Proje Açıklaması
