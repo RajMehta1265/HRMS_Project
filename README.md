@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HRMS (Human Resource Management System)
 
 ##  Mevcut Diller / Available Languages
@@ -274,7 +273,7 @@ POST /api/employers/register
     "name": "Aysu",
     "lastName": "Ay",
     "nationalId": "12345678901",
-    "birthDate": 1996,
+    "birthDate": 1995,
     "email": "aysu@example.com",
     "password": "password123",
     "confirmPassword": "password123"
@@ -349,4 +348,3 @@ API will be available at `http://localhost:8080`
 =======
 # HMRS-App
 Java Human Resource Management System
->>>>>>> 9a26837defc113a1fedb8cb66164e1640ffc33b7
