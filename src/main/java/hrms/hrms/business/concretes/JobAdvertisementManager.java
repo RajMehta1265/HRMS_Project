@@ -21,17 +21,17 @@ import hrms.hrms.entity.JobPosition;
 import hrms.hrms.repository.CityDao;
 import hrms.hrms.repository.EmployerDao;
 import hrms.hrms.repository.JobAdvertisementDao;
-import hrms.hrms.repository.JobPositonDao;
+import hrms.hrms.repository.JobPositionDao;
 
 @Service
 public class JobAdvertisementManager implements JobAdvertisementService {
 
 	private final JobAdvertisementDao jobAdvertisementDao;
-	private final JobPositonDao jobPositionDao;
+	private final JobPositionDao jobPositionDao;
 	private final CityDao cityDao;
 	private final EmployerDao employerDao;
 
-	public JobAdvertisementManager(JobAdvertisementDao jobAdvertisementDao, JobPositonDao jobPositionDao,
+	public JobAdvertisementManager(JobAdvertisementDao jobAdvertisementDao, JobPositionDao jobPositionDao,
 			CityDao cityDao, EmployerDao employerDao) {
 		this.jobAdvertisementDao = jobAdvertisementDao;
 		this.jobPositionDao = jobPositionDao;

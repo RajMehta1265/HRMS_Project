@@ -13,14 +13,14 @@ import hrms.hrms.core.utilities.SuccessResult;
 import hrms.hrms.dto.JobPositionDto;
 import hrms.hrms.dto.request.CreateJobPositionRequest;
 import hrms.hrms.entity.JobPosition;
-import hrms.hrms.repository.JobPositonDao;
+import hrms.hrms.repository.JobPositionDao;
 
 @Service
 public class JobPositionManager implements JobPositonService {
 
-	private final JobPositonDao jobPositonDao;
+	private final JobPositionDao jobPositonDao;
 
-	public JobPositionManager(JobPositonDao jobPositonDao) {
+	public JobPositionManager(JobPositionDao jobPositonDao) {
 		this.jobPositonDao = jobPositonDao;
 	}
 
