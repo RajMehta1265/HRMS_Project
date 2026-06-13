@@ -81,7 +81,7 @@ public class JobApplicationDaoTest {
 	    seeker.setName("Aysu");
 	    seeker.setLastName("Ay");
 	    seeker.setNationalId("12345678901");
-	    seeker.setBirthDate(LocalDate.of(1995, 1, 1));
+	    seeker.setBirthDate(LocalDate.of(2000, 6, 6));
 	    seeker.setEmail("aysu@test.com");
 	    seeker.setPassword("123456");
 
