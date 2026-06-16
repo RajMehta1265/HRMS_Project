@@ -96,7 +96,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message || 'Failed to submit application.', 'error');
       }
     } catch (err: any) {
-      const errMsg = err.response?.data?.message || 'Unique application constraint failed (Candidate already applied).';
+      const errMsg = err.response?.data?.message || err.message || 'Failed to submit application.';
       showToast(errMsg, 'error');
     }
   };
@@ -120,7 +120,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message || 'Registration failed.', 'error');
       }
     } catch (err: any) {
-      const errMsg = err.response?.data?.message || 'Registration check failed (e.g., email/national ID already in use).';
+      const errMsg = err.response?.data?.message || err.message || 'Registration failed.';
       showToast(errMsg, 'error');
     }
   };
@@ -144,7 +144,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message || 'Registration failed.', 'error');
       }
     } catch (err: any) {
-      const errMsg = err.response?.data?.message || 'Employer domain matching check failed.';
+      const errMsg = err.response?.data?.message || err.message || 'Employer registration failed.';
       showToast(errMsg, 'error');
     }
   };
@@ -175,7 +175,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message || 'Failed to post job advertisement.', 'error');
       }
     } catch (err: any) {
-      const errMsg = err.response?.data?.message || 'Check values (deadline must be in the future).';
+      const errMsg = err.response?.data?.message || err.message || 'Failed to post job advertisement.';
       showToast(errMsg, 'error');
     }
   };
@@ -193,7 +193,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message, 'error');
       }
     } catch (err: any) {
-      showToast(err.response?.data?.message || 'City already exists.', 'error');
+      showToast(err.response?.data?.message || err.message || 'Failed to add city.', 'error');
     }
   };
 
@@ -210,7 +210,7 @@ export const Dashboard: React.FC = () => {
         showToast(result.message, 'error');
       }
     } catch (err: any) {
-      showToast(err.response?.data?.message || 'Job Position already exists.', 'error');
+      showToast(err.response?.data?.message || err.message || 'Failed to add position.', 'error');
     }
   };
 
